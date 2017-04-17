@@ -18,3 +18,5 @@ Improvements:
 1. Alternative layout for Tablets. Fragments are modular and Activities/Fragmens combinations are well placed so should be easy.
 2. Currently app uses different retrofit service instances for each URL, one for Countries API, one for Details API. Should be able to use only one retrofit instance.
 3. Adding image transition from countries screen to details screen.
+4. To handle for no network scenarios.
+5. A splash screen.
