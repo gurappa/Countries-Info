@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Countries</string>
+
+    <string name="ok">OK</string>
+    <string name="cancel">Cancel</string>
+    <string name="title_no_network"><u>Network connection is unavailable</u></string>
+    <string name="message_no_network">Please check your internet connection and try again.</string>
+
+    <string name="country">Country:</string>
+    <string name="capital">Capital:</string>
+    <string name="region">Region:</string>
+    <string name="subregion">Subregion:</string>
+    <string name="population">Population:</string>
+    <string name="latlng">Latitude-longitude:</string>
+    <string name="demonym">Demonym:</string>
+    <string name="language">Language:</string>
+    <string name="area">Area:</string>
+    <string name="timezones">Timezones:</string>
+    <string name="borders">Borders:</string>
+    <string name="calling_codes">Calling codes:</string>
+    <string name="currencies">Currencies:</string>
+</resources>
