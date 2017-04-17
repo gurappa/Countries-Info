@@ -1,4 +1,4 @@
-                                    COUNTRIES INFORMATION APPLICATION
+                                    Countries information application
 
 
 
