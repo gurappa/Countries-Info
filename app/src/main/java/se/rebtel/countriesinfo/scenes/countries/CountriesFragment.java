@@ -117,7 +117,7 @@ public class CountriesFragment extends BaseFragment
      *
      * @param countries list fo countries
      */
-    public void setCountries(List<Country> countries) {
+    public void updateCountries(List<Country> countries) {
         mSwipeRefresh.setRefreshing(false);
 
         mCountries = countries;
@@ -126,7 +126,7 @@ public class CountriesFragment extends BaseFragment
             @Override
             public void run() {
                 if (mCountriesAdapter != null) {
-                    mCountriesAdapter.setCountries(mCountries);
+                    mCountriesAdapter.updateCountries(mCountries);
                 }
             }
         });

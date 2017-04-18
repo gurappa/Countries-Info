@@ -16,7 +16,7 @@ public interface CountriesContract {
 
         boolean isActive();
 
-        void setCountries(List<Country> countries);
+        void updateCountries(List<Country> countries);
     }
 
     interface Presenter {

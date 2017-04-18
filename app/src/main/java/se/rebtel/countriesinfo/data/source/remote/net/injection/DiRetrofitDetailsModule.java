@@ -7,6 +7,8 @@ package se.rebtel.countriesinfo.data.source.remote.net.injection;
 import android.content.Context;
 import android.util.Log;
 
+import java.util.concurrent.TimeUnit;
+
 import javax.inject.Singleton;
 
 import dagger.Module;
@@ -29,8 +31,13 @@ public class DiRetrofitDetailsModule {
     @Provides
     OkHttpClient provideOkHttpClient(Context context) {
         Log.d(TAG, "provideOkHttpClient");
-        LoggingInterceptor interceptor = new LoggingInterceptor(context);
-        return new OkHttpClient.Builder().addInterceptor(interceptor).build();
+
+        return new OkHttpClient.Builder()
+                .connectTimeout(Constants.HTTP_CONNECTION_TIMEOUT_MILLIS, TimeUnit.SECONDS)
+                .readTimeout(Constants.HTTP_READ_TIMEOUT_MILLIS, TimeUnit.SECONDS)
+                .retryOnConnectionFailure(true)
+                .addInterceptor(new LoggingInterceptor(context))
+                .build();
     }
 
     @Provides

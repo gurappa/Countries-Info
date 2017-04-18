@@ -16,6 +16,8 @@ import android.widget.TextView;
 
 import com.nostra13.universalimageloader.core.ImageLoader;
 
+import java.util.Collections;
+import java.util.Comparator;
 import java.util.List;
 
 import se.rebtel.countriesinfo.R;
@@ -71,8 +73,15 @@ class CountriesAdapter extends RecyclerView.Adapter {
      *
      * @param countries list of countries
      */
-    public void setCountries(List<Country> countries) {
+    public void updateCountries(List<Country> countries) {
         mCountries = countries;
+
+        Collections.sort(countries, new Comparator<Country>() {
+            @Override
+            public int compare(Country o1, Country o2) {
+                return o1.getCountryName().compareToIgnoreCase(o2.getCountryName());
+            }
+        });
 
         notifyDataSetChanged();
     }

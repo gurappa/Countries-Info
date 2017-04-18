@@ -143,7 +143,7 @@ public class DetailsFragment extends BaseFragment implements DetailsContract.Vie
      * @param countryDetails country details
      */
     @Override
-    public void setCountryDetails(CountryDetails countryDetails) {
+    public void updateCountryDetails(CountryDetails countryDetails) {
         mSwipeRefresh.setRefreshing(false);
 
         mCountryDetails = countryDetails;

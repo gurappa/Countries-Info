@@ -19,9 +19,9 @@ import se.rebtel.countriesinfo.data.source.injection.DiRepositoryModule;
 import se.rebtel.countriesinfo.data.source.remote.net.injection.DiRetrofitCountriesModule;
 
 /**
- * Global application that
- *  - creates Dagger Repository component
- *  - init Image Library (UIL) options
+ * Global application that:
+ *  creates Dagger Repository component
+ *  init Image Library (UIL) options
  */
 public class MainApplication extends Application {
 

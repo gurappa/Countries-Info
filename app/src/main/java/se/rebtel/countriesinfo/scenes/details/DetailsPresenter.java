@@ -52,7 +52,7 @@ public class DetailsPresenter implements DetailsContract.Presenter {
     @Subscribe
     public void onCountryDetailsReceived(DetailsReceivedEvent event) {
         if (mDetailsView.isActive()) {
-            mDetailsView.setCountryDetails(event.getCountryDetails());
+            mDetailsView.updateCountryDetails(event.getCountryDetails());
         }
     }
 

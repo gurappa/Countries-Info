@@ -45,7 +45,7 @@ public class CountriesPresenter implements CountriesContract.Presenter {
     @Subscribe
     public void onCountriesReceived(CountriesReceivedEvent event) {
         if (mCountriesView.isActive()) {
-            mCountriesView.setCountries(event.getCountries());
+            mCountriesView.updateCountries(event.getCountries());
         }
     }
 

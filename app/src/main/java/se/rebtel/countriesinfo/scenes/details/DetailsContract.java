@@ -14,7 +14,7 @@ public interface DetailsContract {
 
         boolean isActive();
 
-        void setCountryDetails(CountryDetails countryDetails);
+        void updateCountryDetails(CountryDetails countryDetails);
     }
 
     interface Presenter {
