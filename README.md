@@ -22,4 +22,4 @@ Improvements:
 2. Currently app uses different retrofit service instances for each URL, one for Countries API, one for Details API. Should be able to use only one retrofit instance by inserting the base url.
 3. Adding image transition animation from countries screen to details screen.
 4. Handle no-network scenarios.
-5. A splash screen.
+5. CoordinatorLayout for details screen.
