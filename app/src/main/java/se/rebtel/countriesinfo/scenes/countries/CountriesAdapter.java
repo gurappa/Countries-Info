@@ -5,19 +5,18 @@
 package se.rebtel.countriesinfo.scenes.countries;
 
 import android.content.Context;
+import android.support.v7.widget.CardView;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
-import android.support.v7.widget.CardView;
 import android.widget.TextView;
 
 import com.nostra13.universalimageloader.core.ImageLoader;
 
 import java.util.Collections;
-import java.util.Comparator;
 import java.util.List;
 
 import se.rebtel.countriesinfo.R;
@@ -76,13 +75,7 @@ class CountriesAdapter extends RecyclerView.Adapter {
     public void updateCountries(List<Country> countries) {
         mCountries = countries;
 
-        Collections.sort(countries, new Comparator<Country>() {
-            @Override
-            public int compare(Country o1, Country o2) {
-                return o1.getCountryName().compareToIgnoreCase(o2.getCountryName());
-            }
-        });
-
+        Collections.sort(countries);
         notifyDataSetChanged();
     }
 

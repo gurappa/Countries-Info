@@ -12,7 +12,7 @@ import java.io.Serializable;
 /**
  * Model that holds country name and code.
  */
-public class Country implements Serializable, Parcelable {
+public class Country implements Serializable, Parcelable, Comparable<Country> {
     private String countryName;
     private String countryCode;
 
@@ -73,4 +73,10 @@ public class Country implements Serializable, Parcelable {
             return new Country[size];
         }
     };
+
+    @Override
+    public int compareTo(Country o) {
+        return this.getCountryName().compareToIgnoreCase(o.getCountryName());
+    }
+
 }
