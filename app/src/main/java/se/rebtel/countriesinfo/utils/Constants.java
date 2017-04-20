@@ -10,7 +10,8 @@ package se.rebtel.countriesinfo.utils;
 public class Constants {
     //End point to fetch countries and flag images
     public static final String BASE_COUNTRIES_URL = "https://raw.githubusercontent.com/hjnilsson/country-flags/master/";
-    public static final String IMAGE_COUNTRY_ENDPOINT = "png250px/%s.png";
+    public static final String FLAG_IMAGE_250PX_ENDPOINT = "png250px/%s.png";
+    public static final String FLAG_IMAGE_1000PX_ENDPOINT = "png1000px/%s.png";
     public static final String COUNTRIES_ENDPOINT = "countries.json";
 
     //End point to fetch details of a country

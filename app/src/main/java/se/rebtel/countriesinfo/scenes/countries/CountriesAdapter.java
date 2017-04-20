@@ -55,9 +55,9 @@ class CountriesAdapter extends RecyclerView.Adapter {
         holder.mText.setText(country.getCountryName());
         holder.mImage.setImageDrawable(null);
 
-        Log.d(TAG, "image url : " + Constants.BASE_COUNTRIES_URL + String.format(Constants.IMAGE_COUNTRY_ENDPOINT, country.getCountryCode().toLowerCase()));
+        Log.d(TAG, "image url : " + Constants.BASE_COUNTRIES_URL + String.format(Constants.FLAG_IMAGE_250PX_ENDPOINT, country.getCountryCode().toLowerCase()));
         ImageLoader.getInstance().displayImage(
-                Constants.BASE_COUNTRIES_URL + String.format(Constants.IMAGE_COUNTRY_ENDPOINT, country.getCountryCode().toLowerCase()),
+                Constants.BASE_COUNTRIES_URL + String.format(Constants.FLAG_IMAGE_250PX_ENDPOINT, country.getCountryCode().toLowerCase()),
                 holder.mImage,
                 MainApplication.getDisplayImageLoaderOptions(mContext));
     }

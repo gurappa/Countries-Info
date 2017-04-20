@@ -116,7 +116,7 @@ public class DetailsFragment extends BaseFragment implements DetailsContract.Vie
         mSwipeRefresh.setOnRefreshListener(this);
 
         ImageLoader.getInstance().displayImage(
-                Constants.BASE_COUNTRIES_URL + String.format(Constants.IMAGE_COUNTRY_ENDPOINT, mCountry.getCountryCode().toLowerCase()),
+                Constants.BASE_COUNTRIES_URL + String.format(Constants.FLAG_IMAGE_1000PX_ENDPOINT, mCountry.getCountryCode().toLowerCase()),
                 mImage,
                 MainApplication.getDisplayImageLoaderOptions(getActivity()));
 
