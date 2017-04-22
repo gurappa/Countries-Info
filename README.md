@@ -5,7 +5,10 @@ What:
 Android application that shows list of countries and details of a country chosen.
 
 Why:                                                                                                                           
-As modules of MVP are decoupled with dependency injection (Dagger 2), app gives full flexibility to test the logic (at the moment no logic in this though but in future :blush: ).
+As modules of MVP are decoupled with dependency injection (Dagger 2),                                                          
+-app allows injecting mock implementations when testing the logic (though no logic in this app but in future :blush: ).        
+-components are modular which can be reused                                                                                    
+-Changing dependency implementations (say network module) without affecting the entire system.                                 
 
 Tech used:                                                                                                                     
 Architecture: [Model View Presenter](https://en.wikipedia.org/wiki/Model–view–presenter).                         
